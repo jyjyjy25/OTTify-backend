@@ -7,6 +7,5 @@ import tavebalak.OTTify.user.entity.LikedProgram;
 import java.util.Optional;
 
 public interface LikedProgramRepository extends JpaRepository<LikedProgram, Long> {
-
     Optional<LikedProgram> findByUserIdAndProgramId(@Param("userId") Long userId, @Param("programId") Long programId);
 }
